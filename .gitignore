@@ -1,1 +1,4 @@
 *.DS*
+iis-tf-dev-ab62910474f0.json
+**/**.terraform*
+**/**terraform.tfstate*
