@@ -10,6 +10,53 @@ This exercise will cover
 - Running ad hoc commands via the Ansible Automation Platform web UI
 
 
+## Prerequisites
+
+### Set up Git repository
+
+Ansible Automation Platform (AAP), requires your code be stored in version control. We are going to create a GitHub repository for our Ansible playbooks.
+
+
+
+#### Create a new Repository in your personal GitHub Account.
+
+Inside the Windows VM complete the following steps.
+
+1. Log in or Create a new account [GitHub](https://github.com/) account
+2. Click New Repository
+3. Name the reposistory `ansible-working`
+4. Check the `Add a README file` checkbox
+5. Click the `Create Repository` button
+6. In the new repository click the `code` button to expose the `https url` for the repository
+7. Click the copy button to copy the `https url` for the repo to use in the next step.
+
+
+#### Open the newly created repository in VS Code
+
+1. Launch a new VS Code Window.
+2. Select the Source Control Tab from the toolbar on the left
+3. In the top of the VS Code window click the search bar.
+4. Type: `> clone` and choose `Git: Clone`
+5. Paste the URL to newly created Repo
+6. In the choose a folder dialog, select your `repos` folder.
+7. Click the `select as Repository Destination` button
+8. In the Visual Studio Code dialog click the `Open in this window` or `Add to Workspace` button to open the repository in VS Code
+9. In the left Toolbar click the Explorer button.
+
+
+### Log into AAP
+
+Access the Dashboard at the following URL https://52.53.214.20
+
+
+Log into the dashboard with the username and the password from the spreadsheet
+
+
+You should see something similar to the screenshot below.
+
+![image-20220222024405897](images/image-20220222024405897.png)
+
+
 ## Create an Inventory
 
 Let’s get started: The first thing we need is an inventory of managed hosts. This is the equivalent of an inventory file in Ansible Engine. There is a lot more to it (like dynamic inventories) but let’s start with the basics.
@@ -18,7 +65,7 @@ In the web UI menu on the left side, go to **Resources** → **Inventories**, cl
 
 Provide the following:
 
-* **Name**:  First Inventory
+* **Name**:  First Inventory-[your initials]
 * **Description**: My first inventory file
 * **Organization**: Default
 
@@ -31,26 +78,23 @@ At the top of the page click the **Hosts** button, the list will be empty since 
 Let's add our hosts.  
 
 
-
-For each (`node1`, `node2`) Add the host to the inventory in Automation Platform:
-
 Click the **Add** button and give a **Name**, and **Description**: 
 
-* **Name**: Server (1 or 2)
+* **Name**: Server-[your initials]
 
-* **Description**: Node (1 or 2) from the spreadsheet
+* **Description**: Node from the spreadsheet
 
 * Under **Variables** confirm **YAML** is highlighted and then paste the following:
 
   ```yaml
-  ansible_host: <IP of node (1 or 2) from spreadsheet> 
+  ansible_host: <IP of node from spreadsheet> 
   ```
 
   
 
 * Click **Save** 
 
-You have now created an inventory with new managed hosts.
+You have now created an inventory with new managed host.
 
 
 
@@ -64,9 +108,7 @@ We need to configure the Ansible Automation Platform with the Controller SSH Pri
 
 
 
-In the VS Code window that is connected to the Controller, expand `.ssh` and click `id_rsa`
-
-Copy the **complete private key** (including “BEGIN” and “END” lines) and save it for the next step.
+Copy the **complete private key** (including “BEGIN” and “END” lines) from [here](https://gist.github.com/jruels/00b5e617f4f60e5bc692ae8450089a07)
 
 
 
@@ -74,7 +116,7 @@ Now configure the credentials to access the managed hosts from Ansible Automatio
 
 In the **Resources** menu choose **Credentials**, and click **Add** then fill in the following:
 
-* **Name**: Linux credentials
+* **Name**: Linux credentials-[your initials]
 * **Description**: Credentials to authenticate over SSH
 * **Organization**: Default
 * **Credential Type**: Machine
@@ -91,7 +133,7 @@ Under **Type Details** fill in:
 
 * Click **Save**
 
-Go back to the **Resources -> Credentials -> Linux credentials** and note that the SSH key is not visible.
+Go back to the **Resources -> Credentials -> Linux credentials-[your initials]** and note that the SSH key is not visible.
 
 You have now set up credentials for Ansible to access your managed host.
 
@@ -99,9 +141,9 @@ You have now set up credentials for Ansible to access your managed host.
 
 ## Run Ad Hoc Commands
 
-As you've done with Ansible before you can run ad hoc commands from AAP as well.
+Ansible can run ad hoc commands from AAP as well.
 
-In the web UI go to **Resources → Inventories → First Inventory**
+In the web UI go to **Resources → Inventories → First Inventory-[your initials]**
 
 - Click **Hosts** at the top of the page to change into the hosts view.
 - Click **Run Command**.
@@ -110,7 +152,7 @@ In the web UI go to **Resources → Inventories → First Inventory**
 - Click **Next**
 - **Execution Environment**: Default execution environment
 - Click **Next**
-- **Machine Credential**: Linux credentials
+- **Machine Credential**: Linux credentials[your initials]
 - Click **Next**
 - Click **Launch**, and watch the output. 
 
