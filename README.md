@@ -33,4 +33,4 @@ Lab 14: [AAP projects and jobs](labs/aap-projects-templates-jobs/)
 
 
 ### Day 5 
-[Terraform custom providers](https://github.com/jruels/tf-dev/tree/main/labs/tf-custom-providers)
+[Terraform custom providers](terraform-custom-providers)
