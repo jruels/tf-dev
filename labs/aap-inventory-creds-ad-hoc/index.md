@@ -94,7 +94,7 @@ Click the **Add** button and give a **Name** and **Description**:
 
 * Click **Save** 
 
-You have now created an inventory with new managed host.
+You have now created an inventory with a new managed host.
 
 
 
@@ -102,26 +102,26 @@ You have now created an inventory with new managed host.
 
 One of the great features of the Ansible Automation Platform is to make credentials usable to users without making them visible. To allow AAP to execute jobs on remote hosts, you must configure connection credentials.
 
-> **TIP**:This is one of the most important features of Automation Platform: **Credential Separation**! Credentials are defined separately and not with the hosts or inventory settings.
+> **TIP**: This is one of the most important features of Automation Platform: **Credential Separation**! Credentials are defined separately and not with the hosts or inventory settings.
 
 We need to configure the Ansible Automation Platform with the Controller SSH Private Key to enable it to connect to our managed nodes.
 
 
 
-Copy the **complete private key** (including “BEGIN” and “END” lines) from [here](https://gist.github.com/jruels/00b5e617f4f60e5bc692ae8450089a07)
+At the top of [this](https://gist.github.com/jruels/00b5e617f4f60e5bc692ae8450089a07) page, click the icon to copy the **complete private key** or click **Raw** and copy the entire thing (including “BEGIN” and “END” lines).
 
 
 
 Now configure the credentials to access the managed hosts from Ansible Automation Platform.
 
-In the **Resources** menu choose **Credentials**, and click **Add** then fill in the following:
+In the **Resources** menu, choose **Credentials**, and click **Add,** then fill in the following:
 
 * **Name**: Linux credentials-[your initials]
 * **Description**: Credentials to authenticate over SSH
 * **Organization**: Default
 * **Credential Type**: Machine
 
-Under **Type Details** fill in: 
+Under **Type Details,** fill in: 
 
 * **Username**: ansible
 
@@ -143,11 +143,11 @@ You have now set up credentials for Ansible to access your managed host.
 
 Ansible can run ad hoc commands from AAP as well.
 
-In the web UI go to **Resources → Inventories → First Inventory-[your initials]**
+In the web UI, go to **Resources → Inventories → First Inventory-[your initials]**
 
 - Click **Hosts** at the top of the page to change into the hosts view.
 - Click **Run Command**.
-- On the next screen specify the ad-hoc command: 
+- On the next screen, specify the ad-hoc command: 
 - **Module**: choose `ping`
 - Click **Next**
 - **Execution Environment**: Default execution environment
@@ -169,7 +169,7 @@ The simple **ping** module doesn’t need options. For other modules, you need t
 
 ## Challenge Lab: Ad Hoc Commands
 
-Run an ad-hoc command to make sure the package `tmux` is installed on the host. If unsure, consult the documentation either via the web UI as shown above or by running `ansible-doc yum` on your AAP control host.
+Run an ad-hoc command to make sure the package `tmux` is installed on the host. If unsure, consult the documentation either via the web UI, as shown above, or by running `ansible-doc yum` on your AAP control host.
 
 
 
