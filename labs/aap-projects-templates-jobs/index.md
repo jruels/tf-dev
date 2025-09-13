@@ -2,13 +2,13 @@
 
 An Automation Platform **Project** is a logical collection of Ansible playbooks. You can manage your playbooks by placing them into a source code management (SCM) system supported by AAP, including Git/GitHub, Subversion, and Mercurial.
 
-You should definitely keep your playbooks under version control. In this lab we’ll use playbooks that are provided in a GitHub repository.
+You should definitely keep your playbooks under version control. In this lab, we've provided playbooks in a GitHub repository.
 
 
 
-## Setup Git Repository
+## Set up Git Repository
 
-For this lab we will use a playbook stored in this Git repository
+For this lab, we will use a playbook stored in this Git repository.
 
 [https://github.com/jruels/workshop-examples](https://github.com/jruels/workshop-examples)
 
@@ -82,9 +82,9 @@ To configure and use this repository as a **Source Control Management (SCM)** sy
 
 ## Create the Project
 
-Go to **Resources → Projects** in the side menu view click the **Add** button. Fill in the form: 
+Go to **Resources → Projects** in the side menu view, and click the **Add** button. Fill in the form: 
 
-* **Name**: Ansible Workshop Examples
+* **Name**: Ansible Workshop Examples-[your initials]
 * **Organization**: Default
 * **Execution Environment**: Default execution environment
 * **Source Control Credential Type**: Git
@@ -93,7 +93,7 @@ Now fill in the **Type Details**:
 
 **Source Control URL**: https://github.com/jruels/workshop-examples
 
-**Options**: Select Clean, Delete, Update Revision on Launch to request a fresh copy of the repository and to update the repository when launching a job.
+**Options**: Select Clean, Delete, and Update Revision on Launch to request a fresh copy of the repository and to update the repository when launching a job.
 
 * Click **Save**
 
@@ -112,7 +112,7 @@ A job template is a definition and set of parameters for running an Ansible job.
 - **Project**: Where is the playbook?
 - **What**: playbook to use?
 
-Okay, let’s do that: Go to the **Resources -> Templates**, click the **Add** button and choose **Add job template**.
+Okay, let’s do that: Go to the **Resources -> Templates**, click the **Add** button, and choose **Add job template**.
 
 
 
@@ -120,19 +120,19 @@ Okay, let’s do that: Go to the **Resources -> Templates**, click the **Add** b
 
 Fill in the following: 
 
-* **Name**: User management
+* **Name**: User management-[your initials]
 
 * **Job Type**: Run
 
-* **Inventory**: First Inventory
+* **Inventory**: First Inventory-[your initials]
 
-* **Project**: Ansible Workshop Examples
+* **Project**: Ansible Workshop Examples-[your initials]
 
 * **Execution Environment**: Default execution environment 
 
-* **Playbook**: create_user.yml
+* **Playbook**: `create_user.yml`
 
-* **Credentials**: Linux credentials
+* **Credentials**: Linux credentials-[your initials]
 
 * **Options**: The tasks need to run as `root` so check **Privilege Escalation**
 
@@ -142,7 +142,7 @@ Fill in the following:
 
 This playbook targets hosts in the `web` group. We need to add our servers to the `web` group. 
 
-Go to **Resources → Inventories**, and click **First Inventory**. 
+Go to **Resources → Inventories**, and click **First Inventory-[your initials]**. 
 
 At the top of the screen click **Groups** and then **Add**. Fill in the following: 
 
@@ -152,13 +152,13 @@ At the top of the screen click **Groups** and then **Add**. Fill in the followin
 
 * Click **Save**
 
-At the top of the page click **Hosts**, **Add**, **Add existing host,** and select **Server1**
+At the top of the page, click **Hosts**, **Add**, **Add existing host,** and select **Server-[your initials]**
 
 
 
 
 
-You can start the job by directly clicking the blue **Launch** button, or by clicking on the rocket in the Job Templates overview. After launching the Job Template, you are automatically brought to the job overview where you can follow the playbook execution in real-time:
+You can start the job by directly clicking the blue **Launch** button, or by clicking on the rocket in the Job Templates overview. After launching the Job Template, you are automatically brought to the job overview, where you can follow the playbook execution in real-time:
 
 
 

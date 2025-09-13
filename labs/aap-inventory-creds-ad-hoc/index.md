@@ -10,46 +10,12 @@ This exercise will cover
 - Running ad hoc commands via the Ansible Automation Platform web UI
 
 
-## Prerequisites
-
-### Set up Git repository
-
-Ansible Automation Platform (AAP), requires your code be stored in version control. We are going to create a GitHub repository for our Ansible playbooks.
-
-
-
-#### Create a new Repository in your personal GitHub Account.
-
-Inside the Windows VM complete the following steps.
-
-1. Log in or Create a new account [GitHub](https://github.com/) account
-2. Click New Repository
-3. Name the reposistory `ansible-working`
-4. Check the `Add a README file` checkbox
-5. Click the `Create Repository` button
-6. In the new repository click the `code` button to expose the `https url` for the repository
-7. Click the copy button to copy the `https url` for the repo to use in the next step.
-
-
-#### Open the newly created repository in VS Code
-
-1. Launch a new VS Code Window.
-2. Select the Source Control Tab from the toolbar on the left
-3. In the top of the VS Code window click the search bar.
-4. Type: `> clone` and choose `Git: Clone`
-5. Paste the URL to newly created Repo
-6. In the choose a folder dialog, select your `repos` folder.
-7. Click the `select as Repository Destination` button
-8. In the Visual Studio Code dialog click the `Open in this window` or `Add to Workspace` button to open the repository in VS Code
-9. In the left Toolbar click the Explorer button.
-
-
-### Log into AAP
+### Log in to AAP
 
 Access the Dashboard at the following URL https://34.210.239.41
 
 
-Log in to the dashboard with the username and the password from the spreadsheet
+Log in to the dashboard with the username and the password from the [credentials spreadsheet](https://docs.google.com/spreadsheets/d/18BfLnLeWcqQdujzK9TJdhEzRXunk20yRhPEwwAhMLj4/edit?usp=sharing)
 
 
 You should see something similar to the screenshot below.
@@ -108,7 +74,7 @@ We need to configure the Ansible Automation Platform with the Controller SSH Pri
 
 
 
-At the top of [this](https://gist.github.com/jruels/00b5e617f4f60e5bc692ae8450089a07) page, click the icon to copy the **complete private key** or click **Raw** and copy the entire thing (including “BEGIN” and “END” lines).
+On [this](https://gist.github.com/jruels/00b5e617f4f60e5bc692ae8450089a07) page, copy the entire key (including “BEGIN” and “END” lines).
 
 
 
@@ -152,7 +118,7 @@ In the web UI, go to **Resources → Inventories → First Inventory-[your initi
 - Click **Next**
 - **Execution Environment**: Default execution environment
 - Click **Next**
-- **Machine Credential**: Linux credentials[your initials]
+- **Machine Credential**: Linux credentials-[your initials]
 - Click **Next**
 - Click **Launch**, and watch the output. 
 
