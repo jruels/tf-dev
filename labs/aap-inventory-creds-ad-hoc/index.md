@@ -46,10 +46,10 @@ Inside the Windows VM complete the following steps.
 
 ### Log into AAP
 
-Access the Dashboard at the following URL https://52.53.214.20
+Access the Dashboard at the following URL https://34.210.239.41
 
 
-Log into the dashboard with the username and the password from the spreadsheet
+Log in to the dashboard with the username and the password from the spreadsheet
 
 
 You should see something similar to the screenshot below.
@@ -59,9 +59,9 @@ You should see something similar to the screenshot below.
 
 ## Create an Inventory
 
-Let’s get started: The first thing we need is an inventory of managed hosts. This is the equivalent of an inventory file in Ansible Engine. There is a lot more to it (like dynamic inventories) but let’s start with the basics.
+Let’s get started: The first thing we need is an inventory of managed hosts. This is the equivalent of an inventory file in Ansible Engine. There is a lot more to it (like dynamic inventories), but let’s start with the basics.
 
-In the web UI menu on the left side, go to **Resources** → **Inventories**, click the **Add** button and choose **Add inventory**
+In the web UI menu on the left side, go to **Resources** → **Inventories**, click the **Add** button, and choose **Add inventory.**
 
 Provide the following:
 
@@ -71,20 +71,20 @@ Provide the following:
 
 Click **Save**
 
-At the top of the page click the **Hosts** button, the list will be empty since we have not added any hosts yet.
+At the top of the page, click the **Hosts** button; the list will be empty since we have not added any hosts yet.
 
 
 
 Let's add our hosts.  
 
 
-Click the **Add** button and give a **Name**, and **Description**: 
+Click the **Add** button and give a **Name** and **Description**: 
 
 * **Name**: Server-[your initials]
 
 * **Description**: Node from the spreadsheet
 
-* Under **Variables** confirm **YAML** is highlighted and then paste the following:
+* Under **Variables,** confirm **YAML** is highlighted, and then paste the following:
 
   ```yaml
   ansible_host: <IP of node from spreadsheet> 
