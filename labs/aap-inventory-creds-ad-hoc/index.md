@@ -74,7 +74,7 @@ We need to configure the Ansible Automation Platform with the Controller SSH Pri
 
 
 
-On this page [https://gist.github.com/jruels/00b5e617f4f60e5bc692ae8450089a07 copy the entire key (including “BEGIN” and “END” lines).
+On this page [https://gist.github.com/jruels/00b5e617f4f60e5bc692ae8450089a07](https://gist.github.com/jruels/00b5e617f4f60e5bc692ae8450089a07) copy the entire key (including “BEGIN” and “END” lines).
 
 
 
