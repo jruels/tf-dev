@@ -15,7 +15,7 @@ This exercise will cover
 Access the Dashboard at the following URL https://34.210.239.41
 
 
-Log in to the dashboard with the username and the password from the [credentials spreadsheet](https://docs.google.com/spreadsheets/d/18BfLnLeWcqQdujzK9TJdhEzRXunk20yRhPEwwAhMLj4/edit?usp=sharing)
+Log in to the dashboard with the username and the password from the [credentials spreadsheet](https://docs.google.com/spreadsheets/d/1gTV6btPeIyyXylRkDn2_LNbWkf9BGU6wsi5eIb-ynLY/edit?usp=sharing)
 
 
 You should see something similar to the screenshot below.
