@@ -1,28 +1,28 @@
-| Name                                | Username     | Virtual Machine Password | Virtual Machine Portal       |
-|:------------------------------------|:-------------|:-------------------------|:-----------------------------|
-| Dave Greene                         | WSAUTO25-61  | TEKwsauto25!             | https://my.ablazedesktop.com |
-| Daniel Figueiredo                   | WSAUTO25-62  | TEKwsauto25!             |                              |
-| Antonio De Vido                     | WSAUTO25-63  | TEKwsauto25!             |                              |
-| Ann Donne                           | WSAUTO25-64  | TEKwsauto25!             |                              |
-| Curt Johnson                        | WSAUTO25-65  | TEKwsauto25!             |                              |
-| Luis Uribarri                       | WSAUTO25-66  | TEKwsauto25!             |                              |
-| Tariq Murtuza                       | WSAUTO25-67  | TEKwsauto25!             |                              |
-| Premal Parekh                       | WSAUTO25-68  | TEKwsauto25!             |                              |
-| Srinivasa Devudu Mara Yallappareddy | WSAUTO25-69  | TEKwsauto25!             |                              |
-| Madhukiran Bangalore Ramachandra    | WSAUTO25-70  | TEKwsauto25!             |                              |
-| Netsanet Woldesenbet                | WSAUTO25-71  | TEKwsauto25!             |                              |
-| Saqib Zaheer                        | WSAUTO25-72  | TEKwsauto25!             |                              |
-| Carlton Magnum                      | WSAUTO25-73  | TEKwsauto25!             |                              |
-| Matthew Coney                       | WSAUTO25-74  | TEKwsauto25!             |                              |
-| Margaret Molenda                    | WSAUTO25-75  | TEKwsauto25!             |                              |
-| Suraj Janakiraman                   | WSAUTO25-76  | TEKwsauto25!             |                              |
-| Norah Alobaidan                     | WSAUTO25-77  | TEKwsauto25!             |                              |
-| Rakesh Tuteja                       | WSAUTO25-78  | TEKwsauto25!             |                              |
-| Philip Mann                         | WSAUTO25-79  | TEKwsauto25!             |                              |
-| Robson Correia                      | WSAUTO25-80  | TEKwsauto25!             |                              |
-| Diane Han                           | WSAUTO25-81  | TEKwsauto25!             |                              |
-| Hilda Thundathilj                   | WSAUTO25-82  | TEKwsauto25!             |                              |
-| Shilpi Nema                         | WSAUTO25-83  | TEKwsauto25!             |                              |
-| Ekta Mangal                         | WSAUTO25-84  | TEKwsauto25!             |                              |
-| Kyle Hagborg                        | WSAUTO25-85  | TEKwsauto25!             |                              |
-| Instructor                          | WSAUTO25-86  | TEKwsauto25!             |                              |
+| Name              | Username     | Virtual Machine Password | Virtual Machine Portal                      |
+|:------------------|:-------------|:-------------------------|:--------------------------------------------|
+| Samnita Matthew   | WSAUTO25-31  | TEKwsauto25!             | [Ablaze Portal](https://my.ablazedesktop.com) |
+| Nafyad Lenjiso    | WSAUTO25-32  | TEKwsauto25!             |                                            |
+| Jason Bellew      | WSAUTO25-33  | TEKwsauto25!             |                                            |
+| Howard Drew       | WSAUTO25-34  | TEKwsauto25!             |                                            |
+| Donald Conley     | WSAUTO25-35  | TEKwsauto25!             |                                            |
+| Yunkuan Liao      | WSAUTO25-36  | TEKwsauto25!             |                                            |
+| Uchechi Nwaru     | WSAUTO25-37  | TEKwsauto25!             |                                            |
+| Matthew Adams     | WSAUTO25-38  | TEKwsauto25!             |                                            |
+| Gunasekaran Kalimuthu | WSAUTO25-39 | TEKwsauto25!           |                                            |
+| Tom Scheiber      | WSAUTO25-40  | TEKwsauto25!             |                                            |
+| Dale Higbee       | WSAUTO25-41  | TEKwsauto25!             |                                            |
+| Peda Kandru       | WSAUTO25-42  | TEKwsauto25!             |                                            |
+| Gokul Haggahalli  | WSAUTO25-43  | TEKwsauto25!             |                                            |
+| Abhay Nirgudkar   | WSAUTO25-44  | TEKwsauto25!             |                                            |
+| Matt Krieger      | WSAUTO25-45  | TEKwsauto25!             |                                            |
+| Aaron Foreman     | WSAUTO25-46  | TEKwsauto25!             |                                            |
+| Eric Coates       | WSAUTO25-47  | TEKwsauto25!             |                                            |
+| Ronald Craig      | WSAUTO25-48  | TEKwsauto25!             |                                            |
+| Venkateshwarlu Chilukamari | WSAUTO25-49 | TEKwsauto25!       |                                            |
+| Steve Fluge       | WSAUTO25-50  | TEKwsauto25!             |                                            |
+| Nilaratan Das     | WSAUTO25-51  | TEKwsauto25!             |                                            |
+| Jack Ng           | WSAUTO25-52  | TEKwsauto25!             |                                            |
+| Subbu Chilukuri   | WSAUTO25-53  | TEKwsauto25!             |                                            |
+| Rahul Pednekar    | WSAUTO25-54  | TEKwsauto25!             |                                            |
+| Dilipkumar Patel  | WSAUTO25-55  | TEKwsauto25!             |                                            |
+| Instructor        | WSAUTO25-56  | TEKwsauto25!             |                                            |
