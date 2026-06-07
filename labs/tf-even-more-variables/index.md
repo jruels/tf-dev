@@ -3,7 +3,9 @@
 ## Overview 
 Terraform supports several variable types, including bool, string, and numbers.
 
-The following steps continue where the previous lab left off. The changes below should be applied to the `tf-lab3` directory.
+The changes below should be applied to the `tf-lab3` directory.
+
+**NOTE:** Run the following in the Bash shell.
 
 ## VPN gateway support
 
@@ -321,6 +323,7 @@ variable "resource_tags" {
   default     = {
     project     = "my-project",
     environment = "dev"
+    }
 
   validation {
     condition     = length(var.resource_tags["project"]) <= 16 && length(regexall("/[^a-zA-Z0-9-]/", var.resource_tags["project"])) == 0

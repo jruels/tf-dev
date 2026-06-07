@@ -34,7 +34,8 @@ You also want to make sure and add the following to your ignore list. If you are
 
 ### Create Terraform configuration
 
-1. In **Visual Studio Code**, open the working directory created in the previous lab (`YYYYMMDD/terraform`).
+1. Open a new **Visual Studio Code** window.
+1. In the new **Visual Studio Code** window, open the  `terraform` working directory used previously.
 2. Right-click in the **Explorer** pane and select **New Folder**.
 3. Name the folder `tf-lab5`.
 4. Right click `tf-lab5` and click **Open in Integrated Terminal**.
