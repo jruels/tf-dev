@@ -17,7 +17,7 @@ A playbook to manage users, and groups. The playbook is `create_user.yml`
 ```yaml
 ---
 - name: Ansible Create user functionlity module demo
-  hosts: web # Defining the remote server inventory host group
+  hosts: all 
   become: yes
   # Defining the remote server where the ansible create user module
   # will manage the objects
@@ -82,24 +82,24 @@ To configure and use this repository as a **Source Control Management (SCM)** sy
 
 ## Create the Project
 
-Go to **Resources → Projects** in the side menu view, and click the **Add** button. Fill in the form: 
+Go to **Automation Execution → Projects** in the left navigation, and click the **Create project** button. Fill in the form:
 
 * **Name**: Ansible Workshop Examples-[your initials]
 * **Organization**: Default
 * **Execution Environment**: Default execution environment
-* **Source Control Credential Type**: Git
+* **Source control type**: Git
 
-Now fill in the **Type Details**: 
+Now fill in the **Type Details**:
 
-**Source Control URL**: https://github.com/jruels/workshop-examples
+**Source control URL**: https://github.com/jruels/workshop-examples
 
-**Options**: Select Clean, Delete, and Update Revision on Launch to request a fresh copy of the repository and to update the repository when launching a job.
+**Options**: Select Clean, Delete, and Update revision on launch to request a fresh copy of the repository and to update the repository when launching a job.
 
-* Click **Save**
+* Click **Create project**
 
-The new project will be synced automatically after creation. But you can also do this manually: Sync the Project again with the Git repository by going to the **Projects** view and clicking the circular arrow **Sync Project** icon to the right of the Project.
+The new project will be synced automatically after creation. But you can also do this manually: Sync the Project again with the Git repository by going to the **Projects** view and clicking the circular arrow **Sync project** icon to the right of the Project.
 
-After starting the sync job, go to the **Jobs** view: there is a new job for the update of the Git repository.
+After starting the sync job, go to **Automation Execution → Jobs**: there is a new job for the update of the Git repository.
 
 
 
@@ -112,13 +112,13 @@ A job template is a definition and set of parameters for running an Ansible job.
 - **Project**: Where is the playbook?
 - **What**: playbook to use?
 
-Okay, let’s do that: Go to the **Resources -> Templates**, click the **Add** button, and choose **Add job template**.
+Okay, let's do that: Go to **Automation Execution → Templates**, click the **Create template** button, and choose **Create job template**.
 
 
 
 **TIP**: Remember that you can often click on the magnifying glass to get an overview of options to pick to fill in fields.
 
-Fill in the following: 
+Fill in the following:
 
 * **Name**: User management-[your initials]
 
@@ -128,45 +128,39 @@ Fill in the following:
 
 * **Project**: Ansible Workshop Examples-[your initials]
 
-* **Execution Environment**: Default execution environment 
+* **Execution Environment**: Default execution environment
 
 * **Playbook**: `create_user.yml`
 
 * **Credentials**: Linux credentials-[your initials]
 
-* **Options**: The tasks need to run as `root` so check **Privilege Escalation**
+* **Options**: The tasks need to run as `root` so check **Privilege escalation**
 
-* Click **Save**
+* Click **Create job template**
 
 
 
-This playbook targets hosts in the `web` group. We need to add our servers to the `web` group. 
+This playbook targets hosts in the `web` group. We need to add our servers to the `web` group.
 
-Go to **Resources → Inventories**, and click **First Inventory-[your initials]**. 
+Go to **Automation Execution → Infrastructure → Inventories**, and click **First Inventory-[your initials]**.
 
-At the top of the screen click **Groups** and then **Add**. Fill in the following: 
+Click the **Groups** tab, then click **Create group**. Fill in the following:
 
 * **Name**: web
 
 * **Description**: A group for web servers
 
-* Click **Save**
+* Click **Create group**
 
-At the top of the page, click **Hosts**, **Add**, **Add existing host,** and select **Server-[your initials]**
-
-
+On the group detail page, click the **Hosts** tab, click **Add host**, then select **Add existing host** and select **Server-[your initials]**.
 
 
 
-You can start the job by directly clicking the blue **Launch** button, or by clicking on the rocket in the Job Templates overview. After launching the Job Template, you are automatically brought to the job overview, where you can follow the playbook execution in real-time:
 
 
+You can start the job by directly clicking the blue **Launch template** button, or by clicking on the rocket icon in the Templates list view. After launching the Job Template, you are automatically brought to the job output page, where you can follow the playbook execution in real-time.
 
-Job Output: 
-
-![image-20220223001406020](images/image-20220223001406020.png)
-
-After the Job has finished go to the main **Jobs** view: All jobs are listed here, you should see directly before the Playbook run an Source Control Update was started. This is the Git update we configured for the **Project** on launch.
+After the Job has finished, go to **Automation Execution → Jobs**: All jobs are listed here, you should see directly before the Playbook run a Source Control Update was started. This is the Git update we configured for the **Project** on launch.
 
 
 
@@ -174,11 +168,8 @@ After the Job has finished go to the main **Jobs** view: All jobs are listed her
 
 Time for a little challenge:
 
-- Use an ad-hoc command to confirm Rochella is in the `qa_editor` group.
+- Use an ad-hoc command to confirm `rochella` is in the `qa_editor` group.
 
 
 
-## Congrats! 
-
-
-
+## Congrats!
